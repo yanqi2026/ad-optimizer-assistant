@@ -617,7 +617,8 @@ if st.session_state.input_data and st.session_state.chat_messages:
                     break
             submit_feedback_to_feishu("没用", last_question)
             st.info("已记录，会持续优化～ 🙏")
-            st.markdown("📝 **欢迎到反馈表单详细说说**，帮分身变得更聪明～ [点击填写反馈](https://my.feishu.cn/share/base/form/shrcnzsgzjdz3qN1bRkHVeMgTDg)")
+            st.markdown(
+                "如果想更详细反馈，帮分身变得更聪明～ [可以点这里🖱️](https://my.feishu.cn/share/base/form/shrcnzsgzjdz3qN1bRkHVeMgTDg)")
 
 # ========== 页脚 ==========
 st.divider()
