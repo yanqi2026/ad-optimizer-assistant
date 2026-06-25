@@ -2,10 +2,10 @@
 AIGC:
     Label: "1"
     ContentProducer: 001191110102MACQD9K64018705
-    ProduceID: 7629243529901916426-data_volume/files/所有对话/主对话/优化师分身_README.md
+    ProduceID: 7629243529901916426-data_volume/files/所有对话/主对话/用户上传/README_完整版.md
     ReservedCode1: ""
     ContentPropagator: 001191110102MACQD9K64028705
-    PropagateID: 1628839008536272#1782270678438
+    PropagateID: 1628839008536272#1782350947054
     ReservedCode2: ""
 ---
 # 优化师分身
@@ -23,7 +23,7 @@ AIGC:
 ### 核心价值
 - **智能诊断**：输入账户数据，AI输出健康度评分+TOP3紧急问题+可落地建议
 - **策略推荐**：基于推广目标+预算+行业，输出完整的出价/时段/素材方案
-- **素材灵感**：输入产品+人群，生成创意方向+文案模板+妙思/巨量创意官方素材链接
+- **素材灵感**：输入产品+人群，生成创意方向+文案模板+妙思灵感官方素材链接
 
 ### 适用人群
 - 信息流投放优化师（3-10年经验）
@@ -57,7 +57,7 @@ AIGC:
 - 开场3秒钩子参考
 - 5-6个拓展方向（含CTR预期/难度/生命周期）
 - 行业素材趋势要点
-- **妙思灵感/巨量创意官方链接**（直接可跳转参考）
+- **妙思灵感官方链接**（直接可跳转参考）
 
 ---
 
@@ -98,14 +98,29 @@ AIGC:
 
 ## 🚀 快速体验
 
-### 方式1：本地运行
+### ⭐ 在线Demo（推荐，无需配置）
+
+| 渠道 | 链接 | 说明 |
+|------|------|------|
+| **Coze Bot** | [👉 点击立即体验 →](https://coze.cn/bot/7647840847790293042) | 无需配置，直接对话体验3大场景 |
+| **GitHub仓库** | [查看完整代码 →](https://github.com/yanqi2026/ad-optimizer-assistant) | 含PRD+知识库+前端代码 |
+
+> 💡 **没有Coze账号？** 也可以Clone本仓库本地运行，详见下方教程
+
+### 方式1：在线体验Coze Bot
+直接访问 [Coze Bot链接](https://coze.cn/bot/7647840847790293042)，登录后即可体验：
+- 输入账户数据，体验智能诊断
+- 追问策略细节，体验多轮对话
+- 询问素材方向，体验行业洞察
+
+### 方式2：本地运行完整Web Demo
 ```bash
 # 1. 克隆项目
-git clone https://github.com/yanqi2026/优化师分身.git
-cd 优化师分身
+git clone https://github.com/yanqi2026/ad-optimizer-assistant.git
+cd ad-optimizer-assistant
 
 # 2. 安装依赖
-pip install streamlit requests pandas
+pip install -r requirements.txt
 
 # 3. 配置Coze PAT Token
 # 在 .streamlit/secrets.toml 中添加：
@@ -115,8 +130,8 @@ pip install streamlit requests pandas
 python -m streamlit run app.py
 ```
 
-### 方式2：观看Demo视频
-> 📹 Demo视频演示（待上传B站后嵌入）
+### 方式3：观看Demo视频
+> 📹 Demo视频演示（待录制上传）
 
 ---
 
@@ -161,7 +176,7 @@ python -m streamlit run app.py
 - 技术方案：Streamlit + Coze API + RAG知识库 + 多Agent架构
 - 核心功能：智能诊断 / 策略推荐 / 素材灵感三大场景
 - 工作成果：独立完成PRD撰写、Bot系统提示词设计、知识库搭建、前端开发、测试验证
-- 项目链接：https://github.com/yanqi2026/优化师分身
+- 项目链接：https://github.com/yanqi2026/ad-optimizer-assistant
 ```
 
 ---
